@@ -1,6 +1,7 @@
-'use strict';
+/* eslint-disable-next-line strict, lines-around-directive */
+"use strict";
 
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars, @typescript-eslint/no-unused-vars */
 module.exports = (config, webpack) => {
   // Note: we provide webpack above so you should not `require` it
   // Perform customizations to webpack config
