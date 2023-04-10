@@ -1,0 +1,9 @@
+
+node_modules
+build
+dist
+.cache
+.tmp
+src/admin
+**/*.test.*
+src/plugins/**
