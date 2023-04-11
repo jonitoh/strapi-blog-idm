@@ -19,6 +19,14 @@
     "sourceType": "module",
     "project": "./tsconfig.eslint.json"
   },
+  "ignorePatterns": [
+    "node_modules/",
+    "build/",
+    "dist/",
+    ".cache/",
+    ".tmp/",
+    "**/*.test.*"
+  ],
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {}
 }
