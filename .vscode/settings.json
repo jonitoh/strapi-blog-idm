@@ -9,5 +9,5 @@
   "files.exclude": {
     "**/.git": false
   },
-  "dotenv.enableAutocloaking": true
+  "dotenv.enableAutocloaking": false
 }
