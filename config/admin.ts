@@ -1,4 +1,5 @@
 export default ({ env }) => ({
+  url: env("PUBLIC_ADMIN_URL", "/admin"),
   auth: {
     secret: env("ADMIN_JWT_SECRET"),
   },
@@ -10,4 +11,12 @@ export default ({ env }) => ({
       salt: env("TRANSFER_TOKEN_SALT"),
     },
   },
+  watchIgnoreFiles: ["**/config/sync/**"],
+  /*
+  forgotPassword: {
+    from: "",
+    replyTo: "",
+    template: "",
+  },
+  */
 });

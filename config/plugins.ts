@@ -30,4 +30,20 @@ export default ({ env }) => ({
   seo: {
     enabled: true,
   },
+  transformer: {
+    enabled: true,
+    config: {},
+  },
+  "request-id": {
+    enabled: true,
+  },
+  "import-export-entries": {
+    enabled: true,
+    config: {
+      // See `Config` section.
+    },
+  },
+  "content-versioning": {
+    enabled: true,
+  },
 });

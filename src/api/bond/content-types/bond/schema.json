@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bonds",
+  "info": {
+    "singularName": "bond",
+    "pluralName": "bonds",
+    "displayName": "Bond",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["analysis", "other"],
+      "required": true,
+      "default": "other"
+    },
+    "from": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post.post",
+      "inversedBy": "fromBonds"
+    },
+    "to": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post.post",
+      "inversedBy": "toBonds"
+    }
+  }
+}
